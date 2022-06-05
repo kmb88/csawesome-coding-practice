@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("\n\n You are on an island surrounded by water.\n There is a path to the woods to the north, the sea to the south, and a beach shack to the east. \n Which way do you want to go (n,e,s,w)?");
+    String command = scan.nextLine();
+    if (command.equals("n")) 
+    {
+        System.out.println("You enter the forest and hear some rustling. \nThere may be tigers here or maybe it's just monkeys.");
+    }
+    // Add else-ifs for s, e, and an else for any other input. Be creative!
+    else if(command.equals("s")){
+      System.out.println("It looks like you got bite by a \n SHARK!!!");
+    }
+    else if(command.equals("e")){
+      System.out.println("Oh look over there \n A ship!! \n were saved!!");
+        
+    }
+    else if (command.equals("w")){
+      System.out.println("humm wrong direction you tell me whats over there!");
+    }
+    else{
+      System.out.println("Looks like you cant go that way pick another path");
+    }
+    
+    System.out.println("End of adventure!");   
+    scan.close();
+  }
+}
