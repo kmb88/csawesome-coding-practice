@@ -1,0 +1,18 @@
+public class Main{
+  public static void main(String [] args){
+    String s = "sam sells seashells";
+    int index = 0;
+    System.out.println("Original: " + s);
+    
+    while(s.indexOf("s")>=0){
+      
+      index =s.indexOf("s");
+      
+      s= s.substring(0,index) +
+      s.substring(index+1);
+      
+    
+    }
+      System.out.println("removed " +s);
+  }
+}
